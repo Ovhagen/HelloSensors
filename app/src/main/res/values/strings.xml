@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Compass</string>
+    <string name="txtMag"></string>
+    <string name="txtMagAcc"></string>
+    <string name="txtMagX">---</string>
+    <string name="txtMagY">---</string>
+    <string name="txtMagZ">---</string>
+</resources>
