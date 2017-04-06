@@ -42,9 +42,6 @@ public class MainActivity extends Activity implements SensorEventListener {
         txtMagY = (TextView) findViewById(R.id.txtMagY);
         txtMagZ = (TextView) findViewById(R.id.txtMagZ);
         txtDeg = (TextView) findViewById(R.id.current_degrees);
-        /*txtMagAccX = (TextView) findViewById(R.id.txtMagAccX);
-        txtMagAccY = (TextView) findViewById(R.id.txtMagAccY);
-        txtMagAccZ = (TextView) findViewById(R.id.txtMagAccZ);*/
     }
 
     protected void onResume() {
@@ -99,7 +96,8 @@ public class MainActivity extends Activity implements SensorEventListener {
             mPointer.startAnimation(ra);
             mCurrentDegree = -azimuthInDegress;
 
-            txtDeg.setText(String.valueOf(mCurrentDegree));
+            //Print the degree deviation from the north mark.
+            txtDeg.setText(String.valueOf((-1) * mCurrentDegree));
 
         }
     }
